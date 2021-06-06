@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        function alertMessage(){
+            alert("xin chao");
+        }
+        alertMessage();
+        function plusOne(number){
+            return number+1;
+        }
+        alert(plusOne(3));
+        function compare(number1,number2){
+            if(number1>number2){
+                alert(number1+" is bigger than "+number2);
+            }else{
+                return number1+number2;
+            }
+        }
+        compare(3,1);
+        function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+        }
+        result = 0;
+        alert(result);
+        result = addNumbers();
+        alert(result);
+        let name = prompt("enter name star: Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus");
+        let result1 = star(name);
+        alert(result1);
+        function star(name){
+            starName = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+            groupStarName = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+            for(i=0;i<starName.length;i++){
+                if(starName[i]===name){
+                    return groupStarName[i];
+                }
+
+            }
+            return "star name dont have";
+        }
+    </script>
+</body>
+</html>
